@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-02-24 16:10:13
+# 创建时间：2023-02-24 16:11:38
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：12
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -29,7 +29,10 @@ proxies:
   - {"name":"🇺🇸_US_美国","type":"vmess","server":"Kansas.v2ray.online","port":443,"cipher":"auto","uuid":"00BBF5B8-173E-6818-9927-5AD1AA073C7D","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
   - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本_2","type":"trojan","server":"v01.gutingting.com","port":20221,"udp":true,"password":"e2d505e0-950e-4279-997e-94aa54e1cab0","sni":"v2jp01.fuqiangren.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"trojan","server":"v01.gutingting.com","port":20222,"udp":true,"password":"dc5debf0-1176-43b0-b7d0-530de95b7a26","sni":"v2sg01.fuqiangren.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"trojan","server":"v02.gutingting.com","port":20225,"udp":true,"password":"771ea1e3-85dd-4343-9a07-8b894a3ab863","sni":"v2usa01.fuqiangren.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","type":"trojan","server":"v02.gutingting.com","port":20225,"udp":true,"password":"771ea1e3-85dd-4343-9a07-8b894a3ab863","sni":"v2usa01.fuqiangren.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇩🇪_DE_德国","type":"ssr","server":"z0110.security-cloudfront-cdn.com","port":42833,"password":"YpX2opBbrfqJzzMs","cipher":"aes-256-cfb","obfs":"http_simple","protocol":"origin","obfs-param":"www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {"name":"🇨🇳_CN_中国","type":"ssr","server":"42.157.195.234","port":12127,"password":"68xdgu9eyif","cipher":"aes-256-cfb","obfs":"http_simple","protocol":"auth_aes128_sha1","obfs-param":"0f099600777.v23f7nM0","protocol-param":"0f099600777.v23f7nM0"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","type":"ssr","server":"42.157.195.229","port":12127,"password":"68xdgu9eyif","cipher":"aes-256-cfb","obfs":"http_simple","protocol":"auth_aes128_sha1","obfs-param":"0f099600777.v23f7nM0","protocol-param":"0f099600777.v23f7nM0"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -44,7 +47,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -59,7 +65,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -74,7 +83,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 📲 电报信息
     type: select
     proxies:
@@ -88,7 +100,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -102,7 +117,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -116,7 +134,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,7 +168,10 @@ proxy-groups:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
       - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
 
 rules:
 # 本地/局域网地址
